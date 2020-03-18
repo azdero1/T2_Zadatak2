@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" style="-fx-background-color: lightblue;" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Unesite broj n: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="35.0" text="Brojevi između 1 i n koji su djeljivi sa sumom svojih cifara:" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ispis" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#racunaj" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Izračunaj" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <TextField fx:id="unos" GridPane.columnIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+</GridPane>
